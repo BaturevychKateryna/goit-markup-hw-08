@@ -1,0 +1,8 @@
+.social-networks__link--footer {
+    fill: var(--accent-color-white); 
+    background-color: var(--footer-background-icon);
+
+    &:hover, &:focus {
+        background-color: var(--accent-color-blue);
+    } 
+}

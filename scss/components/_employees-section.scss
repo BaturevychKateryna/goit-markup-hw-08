@@ -1,0 +1,31 @@
+.employees {
+    @extend %section;
+    background-color: var(--background-color-for-button);
+
+    &__list {
+        display: flex;
+        gap: 30px;
+    }
+    &__item {
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+    &__box {
+        background-color: var(--accent-color-white);
+        padding: 30px 0;
+        width: 270px;
+        text-align: center;
+        border-radius: 0px 0px 4px 4px;
+    }
+    &__title {
+        margin-bottom: 10px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.19;
+    }
+    &__text {
+        color: var(--tittle-text-color);
+        font-size: 16px;
+        line-height: 1.19;
+        margin-bottom: 16px;
+    }
+}

@@ -1,0 +1,11 @@
+.header {
+    border-bottom: 1px solid var(--border-for-header-color);
+
+    &__position {
+        display: flex;
+        align-items: center;
+    }
+    &__nav { 
+        margin-left: 93px;
+    }
+}
