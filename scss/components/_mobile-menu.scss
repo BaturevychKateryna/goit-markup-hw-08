@@ -8,6 +8,10 @@
     min-height: 796px;
     background-color: var(--accent-color-white);
     transform: translateX(100%);
+    @media (min-width: 768px) {
+        display: none;
+        
+    }
 
 &__close {
     position: absolute;
