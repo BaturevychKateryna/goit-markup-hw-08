@@ -4,18 +4,19 @@
 
     &__list {
 
-        // display: flex;
-        // gap: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+
         // list-style: none;
         // padding-left: 0;
     }
     
     &__item {
-        margin-bottom: 30px;
+        flex-basis: calc(100%/1);
+        // margin-bottom: 30px;
     }
-    &__item:last-child {
-        margin-bottom: 0;
-    }
+
  
     &__box {
         display: flex;

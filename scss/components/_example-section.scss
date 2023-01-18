@@ -1,6 +1,12 @@
 .exemple {
+    display: none;
     @extend %section;
     padding-top: 0;
+
+    @media (min-width: 1200px) {
+        display: block;   
+    }
+
 
     &__list {
         display: flex;
@@ -26,3 +32,4 @@
         background: var(--background-exemple-text);
     }
 }
+

@@ -6,11 +6,18 @@
     &__title {
         text-transform: uppercase;
         margin: 0 auto 30px;
-        width: 696px;
+        width: 100%;
+        max-width: 696px;
         color: var(--accent-color-white);
         font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
+        font-size: 26px;
+        line-height: 1.6;
+
+        @media (min-width: 768px) {
+            font-size: 44px;
+            line-height: 1.36;
+        }
+
     }
 }
 
@@ -37,6 +44,7 @@
 }
 
 .ovarlay {
+    width: 100%;
     max-width: 1600px;
     height: 600px;
     margin-right: auto;

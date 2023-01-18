@@ -1,11 +1,30 @@
 .header {
     border-bottom: 1px solid var(--border-for-header-color);
 
-    &__position {
+    &__position { 
+        margin-left: 15px;
+
+        @media (min-width: 1200px) {
         display: flex;
         align-items: center;
     }
+}
     &__nav { 
-        margin-left: 93px;
+        @media (min-width: 768px) {
+            margin-left: 93px;
+        }
+        
     }
+    &__burger {
+
+        fill: var(--accent-color-blue);
+        border: none;
+        background-color: var(--accent-color-white);
+
+        @media (min-width: 768px)  {
+            display: none;
+            
+        }
+    }
+
 }

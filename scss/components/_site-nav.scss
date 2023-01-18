@@ -1,11 +1,16 @@
 .site-nav {
-    display: flex;
-    padding-left: 0;
-    gap: 50px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+    display: none;
+
+    @media (min-width: 768px) {
+        display: flex;
+        padding-left: 0;
+        gap: 50px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+    }
+
 }
 .site-nav__link {
     display: block;
