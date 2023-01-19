@@ -43,12 +43,18 @@
   padding-left: 15px;
   padding-right: 15px;
   width: 100%;
-  max-width: 1200px;
+  max-width: 480px;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 767px;
+  }
 }
 @media (min-width: 1200px) {
   .container {
     padding-left: 0;
     padding-right: 0;
+    max-width: 1200px;
   }
 }
 
@@ -348,8 +354,14 @@ ul {
 }
 @media (min-width: 768px) {
   .advantage__item {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
+    -ms-flex-preferred-size: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
+  }
+}
+@media (min-width: 1200px) {
+  .advantage__item {
+    -ms-flex-preferred-size: calc((100% - 120px) / 4);
+        flex-basis: calc((100% - 120px) / 4);
   }
 }
 .advantage__box {
@@ -434,9 +446,21 @@ ul {
 }
 .employees__item {
   width: 100%;
-  max-width: 450px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 768px) {
+  .employees__item {
+    max-width: 768px;
+    -ms-flex-preferred-size: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
+  }
+}
+@media (min-width: 1200px) {
+  .employees__item {
+    -ms-flex-preferred-size: calc((100% - 120px) / 4);
+        flex-basis: calc((100% - 120px) / 4);
+  }
 }
 .employees__box {
   background-color: var(--accent-color-white);
@@ -455,6 +479,11 @@ ul {
   font-size: 16px;
   line-height: 1.19;
   margin-bottom: 16px;
+}
+
+.employees__img {
+  width: 100%;
+  max-width: 450px;
 }
 
 .social-networks {
@@ -520,8 +549,22 @@ ul {
   list-style: none;
 }
 .clients__item {
-  width: 170px;
+  width: 210px;
   height: 92px;
+}
+@media (min-width: 768px) {
+  .clients__item {
+    width: 226px;
+    -ms-flex-preferred-size: calc((100% - 90px) / 2);
+        flex-basis: calc((100% - 90px) / 2);
+  }
+}
+@media (min-width: 1200px) {
+  .clients__item {
+    width: 170px;
+    -ms-flex-preferred-size: calc((100% - 180px) / 4);
+        flex-basis: calc((100% - 180px) / 4);
+  }
 }
 
 .clients__icon {
