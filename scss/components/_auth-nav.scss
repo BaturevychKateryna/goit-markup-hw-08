@@ -4,14 +4,12 @@
     @media (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
-    align-items: center;
-
-    margin-left: auto;
-    gap: 10px;
+        margin-left: 90px;
+        gap: 10px;
 
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.02em;
 
     }
@@ -19,6 +17,10 @@
     @media (min-width: 1200px) {
         flex-wrap: nowrap;
             gap: 40px;
+            font-size: 14px;
+    line-height: 1.14;
+    margin-left: 305px;
+
     }
 }
 

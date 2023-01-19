@@ -2,12 +2,15 @@
     border-bottom: 1px solid var(--border-for-header-color);
 
     &__position { 
-margin-left: 15px;
-margin-top: 16px;
+        @media (min-width: 768px) {
+        display: flex;
+        // justify-content: space-between;
+        align-items: center;
 
         @media (min-width: 1200px) {
-        display: flex;
-        align-items: center;
+            width: 100%;
+            max-width: 1600px;
+        }
     }
 }
     &__nav { 
@@ -20,7 +23,6 @@ margin-top: 16px;
         position: absolute;
         top: 10px;
         right: 10px;
-
         fill: var(--accent-color-blue);
         border: none;
         background-color: var(--accent-color-white);

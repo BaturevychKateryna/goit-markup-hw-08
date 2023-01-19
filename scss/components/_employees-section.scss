@@ -1,6 +1,7 @@
 .employees {
-    // @extend %section;
+    @extend %section;
     background-color: var(--background-color-for-button);
+
 
     &__list {
         display: flex;
