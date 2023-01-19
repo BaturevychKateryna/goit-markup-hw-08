@@ -2,14 +2,19 @@
     border-bottom: 1px solid var(--border-for-header-color);
 
     &__position { 
+padding-top: 16px;
+padding-bottom: 16px;
+    // }
         @media (min-width: 768px) {
         display: flex;
+        padding-top: 0;
+        padding-bottom: 0;
         // justify-content: space-between;
         align-items: center;
 
         @media (min-width: 1200px) {
             width: 100%;
-            max-width: 1600px;
+            max-width: 1200px;
         }
     }
 }
@@ -23,9 +28,13 @@
         position: absolute;
         top: 10px;
         right: 10px;
-        fill: var(--accent-color-blue);
+        fill: var(--primary-text-color);
         border: none;
         background-color: var(--accent-color-white);
+
+        &__burger:hover, &__burger:focus {
+            fill: var(--accent-color-blue);
+        }
 
         @media (min-width: 768px)  {
             display: none;
