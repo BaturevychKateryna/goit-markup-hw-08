@@ -1,8 +1,7 @@
 .exemple {
     display: none;
-
-    @extend %section;
     padding-top: 0;
+    @extend %section;
 
     @media (min-width: 1200px) {
         display: block;   

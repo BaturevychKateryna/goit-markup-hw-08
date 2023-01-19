@@ -11,8 +11,17 @@
     }
     &__item {
         width: 100%;
-        max-width: 450px;
+        // max-width: 450px;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        @media (min-width: 768px) {
+            max-width: 768px;
+            flex-basis: calc((100%-4*15px)/2);
+            
+        }
+        @media (min-width: 1200px) {
+            flex-basis: calc((100%-8*15px)/4);
+            
+        }
     }
     &__box {
         background-color: var(--accent-color-white);
@@ -35,3 +44,11 @@
         margin-bottom: 16px;
     }
 }
+.employees__img {
+    width: 100%;
+    max-width: 450px;
+    // @media (min-width: 768px) {
+
+    }
+
+
