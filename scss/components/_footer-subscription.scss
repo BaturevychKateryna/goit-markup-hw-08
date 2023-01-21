@@ -4,13 +4,16 @@
     justify-content: center;
     gap: 20px;
 
+    @media (min-width: 1200px) {
+        flex-direction: row;
+
+    }
+
     &-email {
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 4px;
         background: #2F303A;
         width: 100%;
-        // width: 450px;
-        // max-width: 450px;
         height: 50px;
      
         padding-left: 16px;
@@ -22,7 +25,8 @@
         gap: 10px;
         align-items: center;
         justify-content: center;
-        width: 200px;
+        width: 100%;
+        max-width: 200px;
         height: 50px;
         padding-top: 10px;
         padding-bottom: 10px;
@@ -36,5 +40,22 @@
         font-size: 16px;
         line-height: 1.9;
         letter-spacing: 0.06em;
+        @media (max-width: 1199px) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    }
+}
+.footer__box-subscription {
+    // @media (max-width: 767px) {
+    //     width: 100%;
+
+    // }
+    width: 100%;
+    max-width: 450px;
+    @media (min-width: 1200px) {
+        width: 100%;
+        max-width: 570px;
     }
 }

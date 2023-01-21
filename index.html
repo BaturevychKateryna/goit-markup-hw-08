@@ -113,8 +113,8 @@
         <div class="container">
           <h2 class="title">Чим ми займаємося</h2>
           <ul class="exemple__list">
-            <li class="exemple__icon">
-              <img
+            <li class="exemple__item">
+              <img class="exemple__icon"
                 src="./images/icon1.jpg"
                 alt="Комп'ютер"
                 width="370"
@@ -124,12 +124,12 @@
                   Десктопні додатки
                 </h2>
             </li>
-            <li class="exemple__icon">
-              <img src="./images/icon2.jpg" alt="Телефон" width="370" height="294" />
+            <li class="exemple__item">
+              <img class="exemple__icon" src="./images/icon2.jpg" alt="Телефон" width="370" height="294" />
                 <h2 class="exemple__text">Мобільні додатки</h2>
             </li>
-            <li class="exemple__icon">
-              <img src="./images/icon3.jpg" alt="Планшет" width="370" height="294" />
+            <li class="exemple__item">
+              <img class="exemple__icon" src="./images/icon3.jpg" alt="Планшет" width="370" height="294" />
                 <h2 class="exemple__text">
                   Дизайнерські рішення
                 </h2>
@@ -367,58 +367,60 @@
     <!--Футер-->
     <footer class="footer">
       <div class="container footer__box">
-        <div>
-          <a href="./index.html" class="logo footer__logo"><span class="logo--accent">Web</span>Studio</a>
-        <address>
-          <ul class="footer__list">
-            <li class="footer__item">
-              <a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" class="footer__adress"
-                >м. Київ, пр-т Лесі Українки, 26</a
-              >
-            </li>
-            <li class="footer__item">
-              <a href="mailto:info@devstudio.com" class="footer__contacts">info@devstudio.com</a>
-            </li>
-            <li class="footer__item">
-              <a href="tel:+380961111111" class="footer__contacts">+38 096 111 11 11</a>
-            </li>
-          </ul>
-        </address>
+        <div class="footer__position">
+          <div>
+            <a href="./index.html" class="logo footer__logo"><span class="logo--accent">Web</span>Studio</a>
+          <address>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" class="footer__adress"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <li class="footer__item">
+                <a href="mailto:info@devstudio.com" class="footer__contacts">info@devstudio.com</a>
+              </li>
+              <li class="footer__item">
+                <a href="tel:+380961111111" class="footer__contacts">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+          </div>
+          <div>
+            <h2 class="footer__title">Приєднуйтесь</h2>
+            <ul class="social-networks">
+              <li class="social-networks__item">
+                <a href="#" class="social-networks__link social-networks__link--footer">
+                  <svg width="20" height="20"> 
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-networks__item">
+                <a href="#" class="social-networks__link social-networks__link--footer">
+                  <svg width="20" height="20"> 
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-networks__item">
+                <a href="#" class="social-networks__link social-networks__link--footer">
+                  <svg width="20" height="20"> 
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-networks__item">
+                <a href="#" class="social-networks__link social-networks__link--footer">
+                  <svg width="20" height="20"> 
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div>
-          <h2 class="footer__title">Приєднуйтесь</h2>
-          <ul class="social-networks">
-            <li class="social-networks__item">
-              <a href="#" class="social-networks__link social-networks__link--footer">
-                <svg width="20" height="20"> 
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-networks__item">
-              <a href="#" class="social-networks__link social-networks__link--footer">
-                <svg width="20" height="20"> 
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-networks__item">
-              <a href="#" class="social-networks__link social-networks__link--footer">
-                <svg width="20" height="20"> 
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-networks__item">
-              <a href="#" class="social-networks__link social-networks__link--footer">
-                <svg width="20" height="20"> 
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div>
+        <div class="footer__box-subscription">
           <p class="footer__title">Підпишіться на розсилку</p>
           <form class="footer__subscription">            
             <input type="mail" name="subscription" placeholder="E-mail" class="footer__subscription-email">

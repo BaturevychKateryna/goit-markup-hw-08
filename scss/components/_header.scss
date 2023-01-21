@@ -1,23 +1,24 @@
 .header {
     border-bottom: 1px solid var(--border-for-header-color);
 
+
     &__position { 
-padding-top: 16px;
-padding-bottom: 16px;
-    // }
+    padding-top: 16px;
+    padding-bottom: 16px;
+
         @media (min-width: 768px) {
         display: flex;
         padding-top: 0;
         padding-bottom: 0;
         // justify-content: space-between;
         align-items: center;
-
+    }
         @media (min-width: 1200px) {
             width: 100%;
             max-width: 1200px;
         }
     }
-}
+
     &__nav { 
         @media (min-width: 768px) {
             margin-left: 93px;
