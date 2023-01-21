@@ -14,10 +14,9 @@
         }
         @media (min-width: 1200px) {
 
-            flex-direction: row;
-            flex-wrap: wrap;
-            // justify-content: space-between;
-            align-items: flex-start;
+            // flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: baseline;
 
         }
     }
@@ -88,11 +87,12 @@
 .footer__position {
     @media (min-width: 768px) {
         display: flex;
-        // gap: 165px;
+        align-items: baseline;
+        gap: 165px;
 
     }
     @media (min-width: 1200px) {
-        // gap: 70px;
+        gap: 0;
         margin-right: 93px;
     }
 }
@@ -102,8 +102,16 @@
 flex-direction: column;
     text-align: center;
     min-width: 231px;
-    margin-right: 70px;
+
+
     @media (max-width: 767px) {
         margin-bottom: 60px;
+    }
+//     @media (min-width: 768px){
+//     margin-right: 70px;
+// }
+    @media (min-width: 1200px) {
+        text-align: start;
+            margin-right: 70px;
     }
 }
