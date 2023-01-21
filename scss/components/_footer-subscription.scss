@@ -6,7 +6,6 @@
 
     @media (min-width: 1200px) {
         flex-direction: row;
-
     }
 
     &-email {
@@ -15,13 +14,11 @@
         background: #2F303A;
         width: 100%;
         height: 50px;
-     
         padding-left: 16px;
         color: var(--additional-text-transparent);
     }
     &-buttom {
         display: flex;
-
         gap: 10px;
         align-items: center;
         justify-content: center;
@@ -44,14 +41,9 @@
             margin-left: auto;
             margin-right: auto;
         }
-
     }
 }
 .footer__box-subscription {
-    // @media (max-width: 767px) {
-    //     width: 100%;
-
-    // }
     width: 100%;
     max-width: 450px;
     @media (min-width: 1200px) {
