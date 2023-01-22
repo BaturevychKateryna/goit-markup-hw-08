@@ -1,5 +1,6 @@
 .backdrop {
     position: fixed;
+    overflow: scroll;
     top: 0;
     left: 0;
     width: 100%;
@@ -8,6 +9,8 @@
     transition-property: opacity, visibility;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    
 }
 .is-hidden {
     opacity: 0;

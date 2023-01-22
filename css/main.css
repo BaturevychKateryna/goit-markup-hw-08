@@ -300,16 +300,17 @@ ul {
   text-transform: uppercase;
   margin: 0 auto 30px;
   width: 100%;
-  max-width: 696px;
+  max-width: 360px;
   color: var(--accent-color-white);
   font-weight: 900;
   font-size: 26px;
   line-height: 1.6;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .hero__title {
     font-size: 44px;
     line-height: 1.36;
+    max-width: 696px;
   }
 }
 
@@ -346,41 +347,37 @@ ul {
   background-color: var(--background-color-gray);
   background-position: center;
   background-size: cover;
+  max-width: 480px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/background-mob.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-mob.jpg");
 }
-@media (max-width: 767px) {
-  .ovarlay {
-    max-width: 768px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/background-mob.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-mob.jpg");
-  }
-}
-@media (max-width: 767px) and (min-device-pixel-ratio: 2), (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 192dpi), (max-width: 767px) and (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .ovarlay {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/background-mob@2x.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-mob@2x.jpg");
   }
 }
-@media (max-width: 1199px) {
+@media (min-width: 481px) {
   .ovarlay {
-    max-width: 1200px;
+    max-width: 768px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/background-tab.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-tab.jpg");
   }
 }
-@media (max-width: 1199px) and (min-device-pixel-ratio: 2), (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1199px) and (min-resolution: 192dpi), (max-width: 1199px) and (min-resolution: 2dppx) {
+@media (min-width: 481px) and (min-device-pixel-ratio: 2), (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 481px) and (min-resolution: 192dpi), (min-width: 481px) and (min-resolution: 2dppx) {
   .ovarlay {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/background-tab@2x.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-tab@2x.jpg");
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 769px) {
   .ovarlay {
     max-width: 1600px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/background.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background.jpg");
   }
 }
-@media (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 192dpi), (min-width: 1200px) and (min-resolution: 2dppx) {
+@media (min-width: 769px) and (min-device-pixel-ratio: 2), (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 769px) and (min-resolution: 192dpi), (min-width: 769px) and (min-resolution: 2dppx) {
   .ovarlay {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/background@2x.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background@2x.jpg");
@@ -886,6 +883,7 @@ ul {
 
 .backdrop {
   position: fixed;
+  overflow: scroll;
   top: 0;
   left: 0;
   width: 100%;
@@ -1254,14 +1252,17 @@ ul {
 }
 
 .mobile-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: fixed;
+  overflow: scroll;
   top: 0;
   left: 0;
   padding-top: 48px;
   padding-left: 40px;
   width: 100%;
   height: 100%;
-  max-height: 796px;
   background-color: var(--accent-color-white);
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
@@ -1323,8 +1324,8 @@ ul {
 }
 
 .mobile-menu__contacts {
+  margin-top: auto;
   margin-bottom: 64px;
-  margin-top: 306px;
 }
 
 .mobile-menu__contacts-list {
@@ -1362,18 +1363,28 @@ ul {
 
 .mobile-menu__socials-link {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 1.2px;
   letter-spacing: 0.02em;
   color: var(--accent-color-blue);
 }
+@media (min-width: 480px) {
+  .mobile-menu__socials-link {
+    font-size: 18px;
+  }
+}
 
 .mobile-menu__tell {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 28px;
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: var(--accent-color-blue);
+}
+@media (min-width: 480px) {
+  .mobile-menu__tell {
+    font-size: 34px;
+  }
 }
 
 .mobile-menu__mail {
@@ -1382,4 +1393,15 @@ ul {
   line-height: 1.17px;
   letter-spacing: 0.02em;
   color: var(--tittle-text-color);
+}
+
+.tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 48px;
 }/*# sourceMappingURL=main.css.map */
