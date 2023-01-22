@@ -62,11 +62,11 @@
         background-image: linear-gradient(to right,
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)),
-    url("../images/background-mob.jpg");
+    url("../images/background-480.jpg");
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: linear-gradient(to right,
         rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)), url("../images/background-mob@2x.jpg");
+        rgba(47, 48, 58, 0.4)), url("../images/background-960.jpg");
     }
         // }
         @media (min-width: 481px) {
@@ -74,11 +74,11 @@
             background-image: linear-gradient(to right,
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)),
-    url("../images/background-tab.jpg");
+    url("../images/background-768.jpg");
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: linear-gradient(to right,
         rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)), url("../images/background-tab@2x.jpg");
+        rgba(47, 48, 58, 0.4)), url("../images/background-1536.jpg");
     }
             }
             @media (min-width: 769px) {
@@ -86,11 +86,11 @@
                 background-image: linear-gradient(to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
-        url("../images/background.jpg");
+        url("../images/background-1600.jpg");
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
             background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)), url("../images/background@2x.jpg");
+            rgba(47, 48, 58, 0.4)), url("../images/background-3200.jpg");
         }
                 }
 }
